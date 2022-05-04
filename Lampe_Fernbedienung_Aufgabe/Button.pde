@@ -49,7 +49,7 @@ class Button
     text(text, x, y);
   }
 
-  void mouseMoved()
+  void mausBewegt()
   {
     // Wenn die Maus gerade ueber dem Button ist, wird die Variable mouseOver 
     // entsprechend gesetzt
@@ -65,7 +65,7 @@ class Button
   }
 
  
-  void mouseClicked()
+  void mausGedrueckt()
   {
     // Wenn der Mausklick ueber diesem Button aufgefuehrt wurde, wird
     // die passende Meldung an das zugehörige Fernbedienungsobjekt geschickt.

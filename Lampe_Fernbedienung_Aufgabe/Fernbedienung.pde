@@ -35,20 +35,20 @@ class Fernbedienung
   }
 
   // Leitet das an alle Button weiter
-  void mouseMoved()
+  void mausBewegt()
   {
-    b1.mouseMoved();
-    b2.mouseMoved();
-    b3.mouseMoved();
-    b4.mouseMoved();
+    b1.mausBewegt();
+    b2.mausBewegt();
+    b3.mausBewegt();
+    b4.mausBewegt();
   }
 
-  void mouseClicked()
+  void mausGedrueckt()
   {
-    b1.mouseClicked();
-    b2.mouseClicked();
-    b3.mouseClicked();
-    b4.mouseClicked();
+    b1.mausGedrueckt();
+    b2.mausGedrueckt();
+    b3.mausGedrueckt();
+    b4.mausGedrueckt();
   }
   
  // Hier findet die Reaktion auf das Druecken der Button statt.
@@ -59,6 +59,18 @@ class Fernbedienung
      if (s.equals("I"))
      {
        lampe.setAn(true);
+     }
+     if (s.equals("O"))
+     {
+       lampe.setAn(false);
+     }
+     if (s.equals("+"))
+     {
+       lampe.heller();
+     }
+     if (s.equals("-"))
+     {
+       lampe.dunkler();
      }
      
    }

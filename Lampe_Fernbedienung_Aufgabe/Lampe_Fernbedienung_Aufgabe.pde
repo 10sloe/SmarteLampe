@@ -26,10 +26,10 @@ void draw()
 
 // wird immer aufgerufen, wenn die Maus bewegt wurde
 void mouseMoved() {
-  f.mouseMoved();
+  f.mausBewegt();
 }
 
 // wird immer aufgerufen, wenn die Maus geklickt wurde
 void mouseClicked() {
-  f.mouseClicked();
+  f.mausGedrueckt();
 }
